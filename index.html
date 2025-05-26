@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PHARMACY GIRL'S - Farmacias Luna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #8e44ad, #3498db);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #2c3e50;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f1c40f;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1588776814546-77aaf3d61c4d') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #2c3e50;
+      color: white;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .contact-form button {
+      background: #8e44ad;
+      color: white;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: #9b59b6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PHARMACY GIRL'S</h1>
+    <p>Farmacias Luna - Salud y Bienestar para Ti</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Sobre Nosotros</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio" class="hero">
+    Bienvenidos a PHARMACY GIRL'S
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una red de farmacias comprometida con tu salud. En PHARMACY GIRL'S, combinamos atención profesional con precios accesibles y productos de calidad. Con años de experiencia, nuestro objetivo es ser tu primera opción en bienestar.</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1588776814546-77aaf3d61c4d" alt="Farmacia 1">
+      <img src="https://images.unsplash.com/photo-1588777096576-b17e8d7738ff" alt="Interior">
+      <img src="https://images.unsplash.com/photo-1588776814609-5c3fa3a7f3f3" alt="Productos">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea rows="5" placeholder="Tu mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 PHARMACY GIRL'S - Farmacias Luna. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
